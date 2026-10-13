@@ -3,7 +3,7 @@ schema_version: 1
 
 context:
   name: dataeval-flow
-  version: "0.2.4"
+  version: "0.2.5"
 
 package:
   name: ${{ name|lower }}
@@ -13,7 +13,7 @@ source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/dataeval_flow-${{ version }}.tar.gz
   # Alternative if building directly from GitHub release archive:
   # url: https://github.com/aria-ml/${{ name }}/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: 19eeb0c9d728b6851b9eb4af84623c4ebe6f43aeff6d8286611ec6ef42b7cb25
+  sha256: de0f2c5394d260996a4b0952baa9b100cb943bc1d7261f47d5161832a046a9ce
 
 build:
   number: 0
