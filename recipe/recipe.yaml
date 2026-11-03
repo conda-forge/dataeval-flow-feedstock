@@ -35,8 +35,8 @@ requirements:
   run:
     - python >=${{ python_min }},<3.15
     - click >=8.0
-    - dataeval >=1.1.1
-    - datamaite >=0.4.1
+    - dataeval >=1.1.4
+    - datamaite ==0.4.1
     - numpy >=1.24.2
     - pydantic >=2.0
     - pyyaml >=6.0
