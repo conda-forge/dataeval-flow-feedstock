@@ -3,7 +3,7 @@ schema_version: 1
 
 context:
   name: dataeval-flow
-  version: "0.2.5"
+  version: "0.3.0"
 
 package:
   name: ${{ name|lower }}
@@ -13,7 +13,7 @@ source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/dataeval_flow-${{ version }}.tar.gz
   # Alternative if building directly from GitHub release archive:
   # url: https://github.com/aria-ml/${{ name }}/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: de0f2c5394d260996a4b0952baa9b100cb943bc1d7261f47d5161832a046a9ce
+  sha256: 97d142ad391e78ee19bccd4824102d75c21504a4ac2e9ecf5c047e37e8b8ac0e
 
 build:
   number: 0
@@ -35,10 +35,13 @@ requirements:
   run:
     - python >=${{ python_min }},<3.15
     - click >=8.0
-    - dataeval >=1.1.4
-    - datamaite ==0.4.1
+    - dataeval >=1.2.1
+    - datamaite >=0.4.1
+    - filelock >=4.2.1
+    - maite >=0.9.4,<0.10.0
     - numpy >=1.24.2
-    - pydantic >=2.0
+    - pillow >=13.0.0
+    - pydantic >=2.11
     - pyyaml >=6.0
 
 tests:
